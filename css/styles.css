@@ -117,16 +117,18 @@ body {
 }
 
 .modal {
-    width: 285px;
-    height: 350px;
+    width: 900px;
+    height: 750px;
     background-color: rgb(220, 244, 244);
     border-radius: 5%;
     position: absolute;
     padding: 10px;
     transition: transform 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940),
     oipacity 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940),
-    transform-origin 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)
-    ;
+    transform-origin 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    font-size: 24px;
+    font-family: 'DM Sans',sans-serif;
+    color: #2E3B59;
 }
 
 .backdrop .modal {
@@ -161,6 +163,7 @@ body {
 
 .registration-list {
     list-style: none;
+    padding-left: 20px;
 }
 
 .name {
@@ -194,7 +197,46 @@ body {
 /*Анімація титульної кнопки*/
 
 .button {
-    animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
+    animation: wobble-hor-bottom 5s both infinite;
+}
+
+@keyframes wobble-hor-bottom {
+
+    0% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-15px) rotate(-8deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(8deg);
+    }
+
+    45% {
+        transform: translateX(-8px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    75% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+}
+
+/* .button {
+    animation: flip-in-hor-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
 }
 
 
@@ -211,4 +253,25 @@ body {
         transform: rotateX(0);
         opacity: 0.8;
     }
+} */
+
+.input-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.registration-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: block;
+    width: 400px;
+}
+
+.modal-img {
+    position: absolute;
+    right: 50px;
+    top: 40px;
 }

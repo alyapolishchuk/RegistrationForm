@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
     <link href="./css/styles.css" rel="stylesheet">
 </head>
@@ -51,6 +54,7 @@
 
     <div class="backdrop is-hidden" data-modal>
         <form class="modal">
+            <img class="modal-img" width="400px" src="./images/2modal.jpg">
             <button class="close-button" data-modal-close>
                 <svg class="close-icon" width="18" height="18">
                     <use href="./images/symbol-defs.svg#icon-close">
@@ -60,20 +64,141 @@
             <div class="registration">
                 <ul class="registration-list">
                     <li class="registration-item">
-                        <label class="name" for="name">
+                        <label class="label" for="name">
                             Name:
                         </label>
-                        <input class="name-enter" type="text" id="name" name="name">
+                        <input class="input" type="text" id="name" name="name">
                     </li>
                     <li class="registration-item">
-                        <label class="name" for="phone">
+                        <label class="label" for="phone">
                             Phone number:
                         </label>
-                        <input class="tel-enter" type="tel" id="phone" name="phone">
-
+                        <input class="input" type="tel" id="phone" name="phone">
                     </li>
                     <li class="registration-item">
-                        <input class="submit-button" type="submit" value="Submit">
+                        <label class="label" for="mail">
+                            E-mail:
+                        </label>
+                        <input class="input" type="mail" id="mail" name="mail">
+                    </li>
+                    <li class="registration-item">
+                        <p>
+                            I'd like to go to..
+                        </p>
+                        <ul class="list">
+                            <li class="input-item">
+                                <label >
+                                    sea
+                                </label>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    mountains
+                                </label>
+                                <input type="radio" id="" name="fav_language" value="">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    big city
+                                </label>
+                                <input type="radio" id="" name="fav_language" value="">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    far away islands
+                                </label>
+                                <input type="radio" id="" name="fav_language" value="">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    desert
+                                </label>
+                                <input type="radio" id="" name="fav_language" value="">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    help me to choose
+                                </label>
+                                <input type="radio" id="" name="fav_language" value="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="registration-item">
+                        <p>
+                            I prefer..
+                        </p>
+                        <ul class="list">
+                            <li class="input-item">
+                                <label>
+                                    avoid people during the trip:)
+                                </label>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></li>
+                            <li class="input-item">
+                                <label>
+                                    be a part of a noise party
+                                </label>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    something special
+                                </label>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    romantic trip for two
+                                </label>
+                                <input type="checkbox" id="" name="vehicle3" value="">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    family trip
+                                </label>
+                                <input type="checkbox" id="" name="vehicle3" value="">
+                            </li>
+                        </ul>                       
+                    </li>
+                    <li class="registration-item">
+                        <p>
+                            I would like to try..
+                        </p>
+                        <ul class="list">
+                            <li class="input-item">
+                                <label>
+                                    exotic food
+                                </label>
+                                <input type="checkbox" id="" name="vehicle1" value="Bike">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    extreme adventures
+                                </label>
+                                <input type="checkbox" id="" name="vehicle2" value="Car">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    relax and spa
+                                </label>
+                                <input type="checkbox" id="" name="vehicle3" value="Boat">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                something very old-traditional
+                                </label>
+                                <input type="checkbox" id="" name="vehicle3" value="">
+                            </li>
+                            <li class="input-item">
+                                <label>
+                                    classic all inclusive
+                                </label>
+                                <input type="checkbox" id="" name="vehicle3" value="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="registration-button">
+                        <input class="submit-button" type="button" onclick="alert('Your information has been sent')" value="Contact me">
                     </li>
                 </ul>                
             </div>
