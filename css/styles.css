@@ -1,6 +1,7 @@
 body {
     font-family: 'Square Peg', cursive;
     background-color: #007991;
+    width: 1905px;
 }
 
 .logo {
@@ -18,7 +19,7 @@ body {
 }
 
 .header {
-    /* width: 2385px; */
+    /* width: 1905px; */
     /* height: 140px; */
     display: flex;
     justify-content: center;
